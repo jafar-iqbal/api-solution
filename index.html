@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Integration and DOM Manipulation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+       <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style> -->
+</head>
+
+<body>
+    <div class="search-container">
+        <input id="search-box" type="text" placeholder="Type here category name">
+        <button onclick="handleSearch()" id="search-btn">Search</button>
+    </div>
+
+
+    <!-- main section -->
+    <div class="main-container">
+        <div id="product-container" class="cart-section">
+
+        </div>
+        <div class="summary-sec">
+            <div class="heading">
+                <h4>Name</h4>
+                <h4>Price</h4>
+            </div>
+            <hr>
+            <div id="cart-container">
+
+            </div>
+        </div>
+
+
+    </div>
+    <div id="loading-cotnainer" class="loading-cotnainer">
+        <img src="./images/spinner.gif" alt="" />
+    </div>
+
+    <div id="not-found" class="not-found">
+        <img src="./images/not-found.png" alt="">
+    </div>
+
+    <!-- javascript connect -->
+    <script src="./app.js"></script>
+</body>
